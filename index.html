@@ -23,6 +23,9 @@
 		<meta name="twitter:url" content="" />
 		<meta name="twitter:card" content="" />
 
+		<!--아이폰 전화 바로 연결방지-->
+		<meta name="format-detection" content="telephone=no">
+
 		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
@@ -176,10 +179,11 @@
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
 									<h3>Wedding Party</h3>
-									<p>식사는 코스요리로 제공됩니다.</p>
-									<p>예식 전, 예식 중 식사를 원하시는 분께서는 <b>2층 연회장</b>에서 식사를 하실 수 있으며,<br>
+									<p>로비에 하객분들을 위한 웰컴드링크가 준비되어 있습니다. 마음껏 즐겨주세요!</p>
+									<p>식사는 코스요리로 제공됩니다.<br>
+									예식 전, 예식 중 식사를 원하시는 분께서는 <b>2층 연회장</b>에서 식사를 하실 수 있으며,<br>
 									예식 후 식사를 원하시는 분께서는 <b>3층 연회장</b>에서 식사를 하실 수 있습니다.</p>
-									<p>예식에 사용한 꽃을 랩핑하여 연회장에서 하객분들께 드립니다 :) 기쁜 마음으로 챙겨주세요!</p>
+									<p>예식에 사용한 꽃을 소포장하여 연회장에서 하객분들께 드립니다 :) 축하해주셔서 감사합니다!</p>
 								</div>
 							</div>
 						</div>
@@ -302,9 +306,9 @@
 											<img src="images/couple-1.jpg" alt="user">
 										</figure>
 										<span>제형 & 예나에게 축하인사 전하기</span>
-											<p> <br> 신랑 유제형 <a href="#" class="call">전화하기</a> || <a href="#" class="sms">문자하기</a><br>
+											<p> <br> 신랑 유제형 <a href="tel:010-6567-0229" class="call">전화하기</a> || <a href="sms:010-6567-0229" class="sms">문자하기</a><br>
 												신랑에게 마음 전하실 곳 <br>
-												신부 김예나 <a href="#" class="call">전화하기</a> || <a href="#" class="sms">문자하기</a><br>
+												신부 김예나 <a href="tel:010-5575-3216" class="call">전화하기</a> || <a href="sms:010-5575-3216" class="sms">문자하기</a><br>
 												신부에게 마음 전하실 곳 <br>
 											</p>
 									</div>
@@ -315,7 +319,8 @@
 											<img src="images/couple-2.png" alt="user">
 										</figure>
 										<span> 신랑측 혼주 </span>
-											<p> <br> 어머니 이경은 <a href="#" class="call">전화하기</a> || <a href="#" class="sms">문자하기</a><br>
+											<p> <!--<br> 아버지 (故)유<br> -->
+												<br>어머니 이경은 <a href="tel:010-7186-8510" class="call">전화하기</a> || <a href="sms:010-7186-8510" class="sms">문자하기</a><br>
 												신랑측 혼주 마음 전하실 곳 <br>
 											</p>
 									</div>
@@ -326,8 +331,8 @@
 											<img src="images/couple-3.png" alt="user">
 										</figure>
 										<span> 신부측 혼주 </span>
-											<p> <br> 아버지 김주용 <a href="#" class="call">전화하기</a> || <a href="#" class="sms">문자하기</a><br>
-												어머니 왕언숙 <a href="#" class="call">전화하기</a> || <a href="#" class="sms">문자하기</a></br>
+											<p> <br> 아버지 김주용 <a href="tel:010-2323-3216" class="call">전화하기</a> || <a href="sms:010-2323-3216" class="sms">문자하기</a><br>
+												어머니 왕언숙 <a href="tel:010-2665-3216" class="call">전화하기</a> || <a href="sms:010-2665-3216" class="sms">문자하기</a></br>
 												신부측 혼주 마음 전하실 곳 <br>
 											</p>
 									</div>
@@ -396,13 +401,9 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-md-6 animate-box">
+					<!--지도-->
 					<div id="map" style="width:100%;height:400px;"></div>
-					<!--div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
-						<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
-						<div class="overlay"></div>
-					</div-->
 				</div>
 			</div>
 		</div>
@@ -517,7 +518,7 @@
 		<!--지도띄우기, 마커표시-->
 		var map = new naver.maps.Map('map', {
 			center: new naver.maps.LatLng(37.5152911, 127.0647973),
-			zoom: 17
+			zoom: 16
 		});
 		var marker = new naver.maps.Marker({
 			position: new naver.maps.LatLng(37.5152911, 127.0647973),
