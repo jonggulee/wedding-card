@@ -278,7 +278,7 @@
 										<span><h4>제형 & 예나에게 축하인사 전하기</h4></span>
 											<p> 신랑 유제형 [ <a href="tel:010-6567-0229" class="call">전화하기</a> <i class="fa-duotone fa-circle-heart"></i> <a href="sms:010-6567-0229" class="sms">문자하기</a> ]<br>
 												<!-- fontawesome 참고하시어 원하시는 아이콘으로 변경해주시어요. -->
-												신랑에게 마음전하실 곳 <i class="fa-duotone fa-arrow-right"></i>&nbsp&nbsp<i class="fa-duotone fa-gift-card clipboard-item" id="accountJh" style="color:#90bff5;"></i><br>
+												신랑에게 마음전하실 곳 <i class="fa-duotone fa-arrow-right"></i>&nbsp&nbsp<i class="fa-duotone fa-gift-card clipboard-item" id="accountJh" style="color:#90bff5;"></i><br><br>
 												신부 김예나 [ <a href="tel:010-5575-3216" class="call">전화하기</a> <i class="fa-duotone fa-circle-heart"></i> <a href="sms:010-5575-3216" class="sms">문자하기</a> ]<br>
 												신부에게 마음전하실 곳 <i class="fa-duotone fa-arrow-right"></i>&nbsp&nbsp<i class="fa-duotone fa-gift-card clipboard-item" id="accountYn" style="color:#90bff5;"></i><br>
 											</p>
@@ -519,7 +519,7 @@
 					title: '제형&예나 모바일청첩장',
 					description: '2022.08.28(일) 11:00 노블발렌티 삼성',
 					imageUrl:
-							'http://www.noblevalenti.co.kr/userfiles/media/noble.fles.co.kr/nv-img1.jpg',
+							'https://jehyeongandyena.github.io/images/img_bg_2.jpg',
 					link: {
 						mobileWebUrl: 'https://jehyeongandyena.github.io/',
 						webUrl: 'https://jehyeongandyena.github.io/',
@@ -546,7 +546,7 @@
 	<script>
 		var ACCOUNTS = {
 			'accountJh' : {
-				account : '기업은행 1234567890',
+				account : '기업은행 20309720402017',
 				message: '기업은행 유제형 계좌를 복사하였습니다.',
 			},
 			'accountYn' : {
@@ -577,28 +577,6 @@
 				alert(accountInfo.message)
 			}
 		})
-
-		/*
-		* 각 버튼 엘리먼트와 js script가 로딩되는 시점이 상이한 케이스가 있어 body on click 에서 처리
-		$('#accountJh').click(function() {
-			copyToClipboard('기업은행 1234567890');
-			alert('기업은행 유제형 계좌를 복사하였습니다.');
-		});
-
-		$('#accountYn').click(function() {
-			copyToClipboard('국민은행 00150204326424');
-			alert('국민은행 김예나 계좌를 복사하였습니다.');
-		});
-
-		$('#accountKy').click(function() {
-			copyToClipboard('은행 1234567890');
-			alert('은행 이경은 계좌를 복사하였습니다.');
-		});
-
-		$('#accountJy').click(function() {
-			copyToClipboard('농협은행 81505352019656');
-			alert('농협은행 왕언숙 계좌를 복사하였습니다.');
-		});*/
 	</script>
 	</body>
 </html>
