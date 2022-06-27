@@ -422,10 +422,11 @@
 					<p>
 						<ul class="fh5co-social-icons">
 							<!-- 카톡, 라인 공유하깅 아이콘 넣음 되려나..? -->
-							<li><a id="create-kakao-link-btn" href="javascript:sendLink()">
+							<li><a id="create-kakao-link-btn" href="" style="text-decoration: none; color: #5d5d5d;">
 								<img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" alt="카카오링크 보내기 버튼"/>
+								&nbsp;&nbsp;&nbsp;&nbsp; 카카오톡 공유하기
 							</a></li>
-							<li><a id="create-kakao-link-btn2" href="javascript:sendLink()">카카오톡 공유하기</a></li>
+							<!--<li><a id="create-kakao-link-btn2" href="">카카오톡 공유하기</a></li>-->
 							<!--li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li-->
 						</ul>
@@ -507,9 +508,9 @@
 		var map = new naver.maps.Map('map', mapOptions);
 	</script>
 
-	<script type="text/javascript">
-		<!--카카오톡 공유하기-->
-		function sendLink() {
+
+	<script>
+		function initKakaoShareButton() {
 			Kakao.init("95a948826dc5df162a226b1f1bd7e804");
 
 			Kakao.Link.createDefaultButton({
@@ -536,9 +537,6 @@
 				],
 			})
 		}
-	</script>
-
-	<script>
 		var ACCOUNTS = {
 			'accountJh' : {
 				account : '기업은행 20309720402017',
@@ -572,6 +570,7 @@
 				alert(accountInfo.message)
 			}
 		})
+		initKakaoShareButton()
 	</script>
 	</body>
 </html>
